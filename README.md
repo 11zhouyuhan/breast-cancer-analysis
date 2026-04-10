@@ -1,61 +1,73 @@
 # Breast Cancer Analysis - Data Analysis and Prediction of Breast Cancer
 
-## project introduction
+Project Introduction
 
-This project uses the **Wisconsin Breast Cancer dataset ** of Kaggle to conduct an exploratory analysis of the nuclear characteristics of breast tumors and construct a ** random forest classification model ** to predict whether the tumor is Benign or Malignant.
+This project uses the Wisconsin Breast Cancer dataset of Kaggle to conduct an exploratory analysis of the nuclear characteristics of breast tumors and construct a random forest classification model to predict whether the tumors are benign or malignant. Through feature importance analysis, the key indicators that have the greatest impact on diagnosis are identified to provide data support for assisting medical decision-making.
 
-Through feature importance analysis, the key indicators that have the greatest impact on diagnosis are identified to provide data support for assisting medical decision-making.
+Data source
 
-##  data source
+Dataset Name: Breast Cancer Wisconsin (Diagnostic) Data Set
+Source: Kaggle - UCI Machine Learning Repository
+Data scale: 569 samples, 32 features (radius, texture, perimeter, area, smoothness, etc. of the cell nucleus)
 
-- ** Dataset Name ** : Breast Cancer Wisconsin (Diagnostic) Data Set
-- source of * * * * : [Kaggle - UCI Machine Learning Repository] (https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data)
-- ** Data Size ** : 569 samples, 32 features (radius, texture, perimeter, area, smoothness, etc. of the cell nucleus)
+Project process
 
-##  project process
+Step 1: Data Loading and Exploration (Viewing shapes, statistical summaries, missing value checks)
+Step 2: Data cleaning (Delete the useless Unnamed: 32 columns and convert the tag code M/B to 1/0)
+Step 3: Visual Analysis (Correlation heat Map, Distribution of Target variables)
+Step Four: Training and Evaluation of the Random Forest model
+Step 5: Feature Importance Analysis (Identify the most critical influencing factors)
 
-Steps: Contents
-|------|------|
-1. Data Loading and Exploration (View shapes, Statistical summaries, Missing Value checks
-2. Data cleaning (delete the useless 'Unnamed: 32' column, label code M/B → 1/0)
-Visualization Analysis (Correlation heat map, distribution of target variables
-4. Training and Evaluation of Random Forest Models
-Feature Importance Analysis (Identifying the most critical influencing factors
+Model effect
 
-##  model effect
-
-"Indicator: Score
-|------|------|
 Accuracy rate: 96.49%
-Accuracy rate (benign) : 0.96
-Accuracy rate (malignancy) : 0.98
-Recall rate (benign) : 0.99
-Recall rate (malignant) : 0.93
+Accuracy rate for benign tumors: 0.96
+The accuracy rate of malignant tumors: 0.98
+Benign tumor recall rate: 0.99
+Recall rate of malignant tumors: 0.93
 
-&gt;  The model performed well on the test set and was capable of effectively distinguishing between benign and malignant tumors.
+The model performed well on the test set and was capable of effectively distinguishing between benign and malignant tumors.
 
-##  Most important features (Top 5)
+The most important features (Top5
 
 Sort by the feature importance of the random forest:
 
-Ranking: Feature Name: Importance Score
-|------|----------|------------|
-1 area_worst (worst area) 0.154
-2: concave points_worst (worst concave point) : 0.145
-The concave points_mean (average concave point) is 0.106
-4 radius_worst (worst radius) 0.078
-5: concavity_mean (average concavity) : 0.068
+First place: area_worst (worst area), importance score 0.154
+Second place: concave points_worst (worst concave point), with an importance score of 0.145
+Third place: concave points_mean (average concave point), importance score 0.106
+4th place: radius_worst (Worst radius), importance score 0.078
+5th place: concavity_mean (average concavity), importance score 0.068
 
-&gt;  ** Conclusion ** : The morphological characteristics of the cell nucleus, such as ** area, concave points, and radius **, have the greatest influence on determining the benign or malignant nature of tumors.
+Conclusion: The morphological characteristics of the cell nucleus, such as its area, depressions, and radius, have the greatest influence on determining the benign or malignant nature of tumors.
 
-##  technology used
+The technology used
 
-- **Python** : Pandas, NumPy, Matplotlib, Seaborn
-- **Scikit-learn** : RandomForestClassifier, train_test_split, accuracy_score, classification_report
-- ** Environment ** : Jupyter Notebook
+Python (Pandas, NumPy, Matplotlib, Seaborn)
+Scikit-learn (RandomForestClassifier, train_test_split, accuracy_score, classification_report)
+Environment: Jupyter Notebook
 
-How does  work
+How to operate
 
 1. Clone repository to local
-```bash
 git clone https://github.com/11zhouyuhan/breast-cancer-analysis.git
+
+2. Install dependent packages
+pip install pandas numpy matplotlib seaborn scikit-learn
+
+3. Start Jupyter Notebook, open breast cancer analysis.ipynb, and run all cells in sequence.
+
+Document Description
+
+breast cancer analysis.ipynb: Complete data analysis and modeling code
+README.md: Project Description Document
+
+Project value
+
+Postgraduate entrance examination or recommendation for postgraduate study re-examination: Prove the practical ability of data analysis and machine learning
+Resume: Demonstrate project experience in Python, Pandas, and Scikit-learn
+Introduction to Medical AI: Understanding the Application of Feature Engineering and Model Interpretation in Medical Scenarios
+
+Contact information
+
+GitHub: 11zhouyuhan
+Projects link: https://github.com/11zhouyuhan/breast-cancer-analysis
