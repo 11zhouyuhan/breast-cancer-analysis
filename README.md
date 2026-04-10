@@ -15,7 +15,7 @@ Using the Wisconsin Breast Cancer dataset of Kaggle, the nuclear characteristics
 
 ## model effect
 - Accuracy rate: 96.5%
-- ** Accuracy ** : 0.96
+- Accuracy: 0.96
 - Recall rate: 0.95
 
 &gt;  Please fill in the accuracy rate you actually achieved.
