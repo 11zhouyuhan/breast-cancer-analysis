@@ -1,7 +1,7 @@
 # Breast Cancer Analysis - Data Analysis and Prediction of Breast Cancer
 
 ## project introduction
-Using the Wisconsin Breast Cancer dataset of Kaggle, the nuclear characteristics of breast tumors were analyzed, and a ** random forest classification model ** was constructed to predict whether the tumor was benign or malignant.
+Using the Wisconsin Breast Cancer dataset of Kaggle, the nuclear characteristics of breast tumors were analyzed, and a  random forest classification model  was constructed to predict whether the tumor was benign or malignant.
 
 ## data source
 [Breast Cancer Wisconsin Dataset](https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data)
